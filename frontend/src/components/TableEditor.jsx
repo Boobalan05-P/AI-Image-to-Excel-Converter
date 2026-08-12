@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Plus, Trash2, Wand2, Eye, FileSpreadsheet, FileText, CheckCircle2, AlertTriangle, Info } from 'lucide-react';
-import { getConfidenceBadgeColor, getDownloadUrl, getPreviewUrl } from '../utils/helpers';
-import { exportTableApi } from '../services/api';
+import { getConfidenceBadgeColor } from '../utils/helpers';
+import { exportTableApi, getDownloadUrl, getPreviewUrl } from '../services/api';
 
 export default function TableEditor({ resultData, onShowToast }) {
   const [matrix, setMatrix] = useState([]);

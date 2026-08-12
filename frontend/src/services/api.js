@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://ai-image-to-excel-converter.onrender.com';
+const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://ai-image-to-excel-converter.onrender.com/api';
+const API_BASE_URL = configuredBaseUrl.replace(/\/$/, '').endsWith('/api')
+  ? configuredBaseUrl.replace(/\/$/, '')
+  : `${configuredBaseUrl.replace(/\/$/, '')}/api`;
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -66,11 +69,21 @@ export const clearHistoryApi = async () => {
 export const getDownloadUrl = (filename) => {
   if (!filename) return '#';
   if (filename.startsWith('http')) return filename;
-  return `${API_BASE_URL}/download/${filename}`;
+  const path = filename.startsWith('/api/download/')
+    ? filename.replace('/api', '')
+    : filename.startsWith('/download/')
+      ? filename
+      : `/download/${filename}`;
+  return `${API_BASE_URL}${path}`;
 };
 
 export const getPreviewUrl = (filename) => {
   if (!filename) return '#';
   if (filename.startsWith('http')) return filename;
-  return `${API_BASE_URL}/preview/${filename}`;
+  const path = filename.startsWith('/api/preview/')
+    ? filename.replace('/api', '')
+    : filename.startsWith('/preview/')
+      ? filename
+      : `/preview/${filename}`;
+  return `${API_BASE_URL}${path}`;
 };
