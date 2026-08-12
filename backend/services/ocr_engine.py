@@ -132,6 +132,50 @@ def split_compound_cell(cell: dict) -> list[dict]:
     second = dict(cell, text=name, bbox=[midpoint, y, x + w - midpoint, h])
     return [first, second]
 
+
+def ocr_grid_in_single_pass(image: np.ndarray, grid_rows: list) -> tuple[list, list] | None:
+    """Run EasyOCR once and place each recognized box in its containing cell."""
+    reader = get_easyocr_reader()
+    if reader is None:
+        return None
+
+    try:
+        results = reader.readtext(image)
+    except Exception as exc:
+        logger.warning("Full-grid EasyOCR failed: %s", exc)
+        return None
+
+    table_data = []
+    cell_confidences = []
+    for row_boxes in grid_rows:
+        row_data = [
+            {"text": "", "confidence": 1.0, "is_low_confidence": False, "bbox": [x, y, w, h]}
+            for x, y, w, h in row_boxes
+        ]
+        table_data.append(row_data)
+
+    for bbox, text, confidence in results:
+        center_x = sum(point[0] for point in bbox) / len(bbox)
+        center_y = sum(point[1] for point in bbox) / len(bbox)
+        cleaned_text = auto_correct_cell_value(text)
+        if not cleaned_text:
+            continue
+
+        for row_index, row_boxes in enumerate(grid_rows):
+            for column_index, (x, y, w, h) in enumerate(row_boxes):
+                if x <= center_x <= x + w and y <= center_y <= y + h:
+                    cell = table_data[row_index][column_index]
+                    cell["text"] = " ".join(part for part in [cell["text"], cleaned_text] if part)
+                    cell["confidence"] = min(cell["confidence"], round(float(confidence), 2))
+                    cell["is_low_confidence"] = cell["confidence"] < 0.5
+                    cell_confidences.append(float(confidence))
+                    break
+            else:
+                continue
+            break
+
+    return table_data, cell_confidences
+
 def process_table_ocr(image: np.ndarray, grid_rows: list, engine: str = "easyocr") -> dict:
     """
     Runs OCR across detected table grid cells and builds matrix structure.
@@ -139,7 +183,10 @@ def process_table_ocr(image: np.ndarray, grid_rows: list, engine: str = "easyocr
     table_data = []
     cell_confidences = []
     
-    if grid_rows:
+    single_pass_result = ocr_grid_in_single_pass(image, grid_rows) if grid_rows and engine == "easyocr" else None
+    if single_pass_result is not None:
+        table_data, cell_confidences = single_pass_result
+    elif grid_rows:
         for row_idx, row_boxes in enumerate(grid_rows):
             row_data = []
             for col_idx, (x, y, w, h) in enumerate(row_boxes):
