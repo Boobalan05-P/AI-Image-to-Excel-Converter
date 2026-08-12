@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: image-to-excel-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "gunicorn --directory backend app:app"
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DEFAULT_OCR_ENGINE
+        value: easyocr

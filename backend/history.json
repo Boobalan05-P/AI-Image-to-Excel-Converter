@@ -1,0 +1,2796 @@
+[
+  {
+    "id": "fd6c3a5d-d5af-4d47-9174-89a2f9b76986",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-10T20:47:32.239772",
+    "row_count": 9,
+    "col_count": 3,
+    "avg_confidence": 0.89,
+    "excel_filename": "d84b6456_test.xlsx",
+    "csv_filename": "d84b6456_test.csv",
+    "preview_filename": "d84b6456_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.94,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            60
+          ]
+        },
+        {
+          "text": "Student Name",
+          "confidence": 0.94,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            0,
+            194,
+            60
+          ]
+        },
+        {
+          "text": "Gendi",
+          "confidence": 0.91,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            0,
+            52,
+            60
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994351920",
+          "confidence": 0.95,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            60,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "AAKASH",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            60,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.92,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            60,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994500172",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            80,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "DHIVYESH R",
+          "confidence": 0.92,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            80,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            80,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994562587",
+          "confidence": 0.72,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            100,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "PREM MENAN",
+          "confidence": 0.99,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            100,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            100,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994557687",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            120,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "SUBITH VENU G",
+          "confidence": 0.66,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            120,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.82,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            120,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9000274954",
+          "confidence": 0.96,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            140,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ABRISH SANJAI",
+          "confidence": 0.99,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            140,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            140,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002075494",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            160,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "KABILESH B",
+          "confidence": 0.82,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            160,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            160,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002058719",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            180,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "BARANITHARANA",
+          "confidence": 0.96,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            180,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            180,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002390552",
+          "confidence": 0.7,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            200,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ANANTHA KUMAR",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            200,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            288,
+            200,
+            52,
+            20
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "12ef8e56-a68d-4863-a169-a6d7f8fbde5f",
+    "filename": "00cae56c_test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-10T20:44:46.500752",
+    "row_count": 9,
+    "col_count": 3,
+    "avg_confidence": 0.89,
+    "excel_filename": "5ff23d56_00cae56c_test.xlsx",
+    "csv_filename": "5ff23d56_00cae56c_test.csv",
+    "preview_filename": "5ff23d56_00cae56c_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.94,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            60
+          ]
+        },
+        {
+          "text": "Student Name",
+          "confidence": 0.94,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            0,
+            194,
+            60
+          ]
+        },
+        {
+          "text": "Gendi",
+          "confidence": 0.91,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            0,
+            52,
+            60
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994351920",
+          "confidence": 0.95,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            60,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "AAKASH",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            60,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.92,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            60,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994500172",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            80,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "DHIVYESH R",
+          "confidence": 0.92,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            80,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            80,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994562587",
+          "confidence": 0.72,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            100,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "PREM MENAN",
+          "confidence": 0.99,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            100,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            100,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994557687",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            120,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "SUBITH VENU G",
+          "confidence": 0.66,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            120,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.82,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            120,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9000274954",
+          "confidence": 0.96,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            140,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ABRISH SANJAI",
+          "confidence": 0.99,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            140,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            140,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002075494",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            160,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "KABILESH B",
+          "confidence": 0.82,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            160,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            160,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002058719",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            180,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "BARANITHARANA",
+          "confidence": 0.96,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            180,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            180,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002390552",
+          "confidence": 0.7,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            200,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ANANTHA KUMAR",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            200,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            288,
+            200,
+            52,
+            20
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "85b72f5b-50ca-47a0-a1fa-921971ff53fa",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-10T20:42:33.744667",
+    "row_count": 9,
+    "col_count": 3,
+    "avg_confidence": 1.0,
+    "excel_filename": "c038fe0a_test.xlsx",
+    "csv_filename": "c038fe0a_test.csv",
+    "preview_filename": "c038fe0a_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            60
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            0,
+            194,
+            60
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            0,
+            52,
+            60
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            60,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            60,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            60,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            80,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            80,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            80,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            100,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            100,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            100,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            120,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            120,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            120,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            140,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            140,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            140,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            160,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            160,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            160,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            180,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            180,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            180,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            200,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            200,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 0.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            200,
+            52,
+            20
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "d95d110f-b344-4288-8cc7-242c06cf1e79",
+    "filename": "img_to_exc_test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 14103,
+    "upload_date": "2026-08-10T12:18:50.497724",
+    "row_count": 8,
+    "col_count": 3,
+    "avg_confidence": 0.85,
+    "excel_filename": "509ec269_img_to_exc_test.xlsx",
+    "csv_filename": "509ec269_img_to_exc_test.csv",
+    "preview_filename": "509ec269_img_to_exc_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "9994351920",
+          "confidence": 0.87,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            100,
+            19
+          ]
+        },
+        {
+          "text": "AAKASH",
+          "confidence": 0.87,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            0,
+            188,
+            19
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            0,
+            52,
+            19
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994500173",
+          "confidence": 0.57,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            19,
+            100,
+            21
+          ]
+        },
+        {
+          "text": "DHIVYESH R",
+          "confidence": 0.57,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            19,
+            188,
+            21
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            19,
+            52,
+            21
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994562587",
+          "confidence": 0.61,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            40,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "PREM MENAN",
+          "confidence": 0.61,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            40,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            40,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994557687",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            60,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "SUBiTH VENU G",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            100,
+            60,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            60,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9000274954",
+          "confidence": 0.9,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            80,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "ABRISH SANJAI",
+          "confidence": 0.9,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            80,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            80,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002075494",
+          "confidence": 0.86,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            100,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "KABILESH B",
+          "confidence": 0.86,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            100,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            100,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002058719",
+          "confidence": 0.78,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            120,
+            100,
+            21
+          ]
+        },
+        {
+          "text": "BARANITHARANA",
+          "confidence": 0.78,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            120,
+            188,
+            21
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            120,
+            52,
+            21
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002390553",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            141,
+            100,
+            21
+          ]
+        },
+        {
+          "text": "ANANTHA KUMAR",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            141,
+            188,
+            21
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.64,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            141,
+            52,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "c56e9938-e0de-43bc-bd62-412b8b07bf0c",
+    "filename": "img_to_exc_test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 14103,
+    "upload_date": "2026-08-10T12:09:59.483687",
+    "row_count": 8,
+    "col_count": 3,
+    "avg_confidence": 0.85,
+    "excel_filename": "1040ef89_img_to_exc_test.xlsx",
+    "csv_filename": "1040ef89_img_to_exc_test.csv",
+    "preview_filename": "1040ef89_img_to_exc_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "9994351920",
+          "confidence": 0.87,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            100,
+            19
+          ]
+        },
+        {
+          "text": "AAKASH",
+          "confidence": 0.87,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            0,
+            188,
+            19
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            0,
+            52,
+            19
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994500173",
+          "confidence": 0.57,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            19,
+            100,
+            21
+          ]
+        },
+        {
+          "text": "DHIVYESH R",
+          "confidence": 0.57,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            19,
+            188,
+            21
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            19,
+            52,
+            21
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994562587",
+          "confidence": 0.61,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            40,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "PREM MENAN",
+          "confidence": 0.61,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            40,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            40,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994557687",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            60,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "SUBiTH VENU G",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            100,
+            60,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            60,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9000274954",
+          "confidence": 0.9,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            80,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "ABRISH SANJAI",
+          "confidence": 0.9,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            80,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            80,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002075494",
+          "confidence": 0.86,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            100,
+            100,
+            20
+          ]
+        },
+        {
+          "text": "KABILESH B",
+          "confidence": 0.86,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            100,
+            188,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            100,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002058719",
+          "confidence": 0.78,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            120,
+            100,
+            21
+          ]
+        },
+        {
+          "text": "BARANITHARANA",
+          "confidence": 0.78,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            120,
+            188,
+            21
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            120,
+            52,
+            21
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9002390553",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            141,
+            100,
+            21
+          ]
+        },
+        {
+          "text": "ANANTHA KUMAR",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            100,
+            141,
+            188,
+            21
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.64,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            141,
+            52,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "eb18d308-bf21-4556-ad97-4ed36d26efb2",
+    "filename": "img_to_exc_test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 14103,
+    "upload_date": "2026-08-10T11:54:03.468276",
+    "row_count": 5,
+    "col_count": 3,
+    "avg_confidence": 0.15,
+    "excel_filename": "a5f1c828_img_to_exc_test.xlsx",
+    "csv_filename": "a5f1c828_img_to_exc_test.csv",
+    "preview_filename": "a5f1c828_img_to_exc_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            292,
+            6,
+            17,
+            11
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            22,
+            26,
+            28,
+            11
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            53,
+            26,
+            18,
+            11
+          ]
+        },
+        {
+          "text": "I",
+          "confidence": 0.25,
+          "is_low_confidence": true,
+          "bbox": [
+            132,
+            26,
+            16,
+            11
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            58,
+            46,
+            34,
+            11
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            292,
+            86,
+            17,
+            12
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            50,
+            128,
+            21,
+            11
+          ]
+        },
+        {
+          "text": "46",
+          "confidence": 0.05,
+          "is_low_confidence": true,
+          "bbox": [
+            292,
+            127,
+            17,
+            12
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "8755c799-5ce1-44fe-9370-8bc4b65f4031",
+    "filename": "img_to_exc_test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 14103,
+    "upload_date": "2026-08-10T11:26:53.967034",
+    "row_count": 4,
+    "col_count": 3,
+    "avg_confidence": 0.88,
+    "excel_filename": "c9097cde_img_to_exc_test.xlsx",
+    "csv_filename": "c9097cde_img_to_exc_test.csv",
+    "preview_filename": "c9097cde_img_to_exc_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Ma",
+          "confidence": 0.98,
+          "is_low_confidence": false,
+          "bbox": [
+            292,
+            6,
+            17,
+            11
+          ]
+        }
+      ],
+      [
+        {
+          "text": "9994",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            22,
+            26,
+            28,
+            11
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            53,
+            26,
+            18,
+            11
+          ]
+        },
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            132,
+            26,
+            16,
+            11
+          ]
+        }
+      ],
+      [
+        {
+          "text": "5258/",
+          "confidence": 0.86,
+          "is_low_confidence": false,
+          "bbox": [
+            58,
+            46,
+            34,
+            11
+          ]
+        }
+      ],
+      [
+        {
+          "text": "Ma",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            292,
+            86,
+            17,
+            12
+          ]
+        }
+      ],
+      [
+        {
+          "text": "058",
+          "confidence": 0.87,
+          "is_low_confidence": false,
+          "bbox": [
+            50,
+            128,
+            21,
+            11
+          ]
+        },
+        {
+          "text": "Ma",
+          "confidence": 0.58,
+          "is_low_confidence": false,
+          "bbox": [
+            292,
+            127,
+            17,
+            12
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "1fe9a9b2-bfaf-4b70-b134-914fe9b07fc8",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-08T19:56:04.309232",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "42796644_test.xlsx",
+    "csv_filename": "42796644_test.csv",
+    "preview_filename": "42796644_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "e7294ccf-4d82-4b2e-88ea-6cb35c85ca8d",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-08T19:43:40.322746",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "c0a1d307_test.xlsx",
+    "csv_filename": "c0a1d307_test.csv",
+    "preview_filename": "c0a1d307_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "54e63a7b-1306-43ea-9900-23678e5d2dbf",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-08T19:35:43.515599",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "baacff1d_test.xlsx",
+    "csv_filename": "baacff1d_test.csv",
+    "preview_filename": "baacff1d_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "2f927f04-d33b-42f2-bd95-6b67fed743ea",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-08T13:05:01.441320",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "d3e3cd6d_test.xlsx",
+    "csv_filename": "d3e3cd6d_test.csv",
+    "preview_filename": "d3e3cd6d_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "cfd4b887-bb27-4d5d-aac9-df23862b6413",
+    "filename": "eff28dfb_test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-08T13:03:32.575626",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "ea3c2bf7_eff28dfb_test.xlsx",
+    "csv_filename": "ea3c2bf7_eff28dfb_test.csv",
+    "preview_filename": "ea3c2bf7_eff28dfb_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "ecd8bda5-7d65-4c27-853c-59066df0edde",
+    "filename": "eff28dfb_test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-08T13:02:07.586250",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "22194fa0_eff28dfb_test.xlsx",
+    "csv_filename": "22194fa0_eff28dfb_test.csv",
+    "preview_filename": "22194fa0_eff28dfb_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "5236c8bb-749d-4236-9e0b-7d9c8891ddc3",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-08T12:57:50.609530",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "ae2aa853_test.xlsx",
+    "csv_filename": "ae2aa853_test.csv",
+    "preview_filename": "ae2aa853_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "6a8a4b2c-5812-4602-b415-55d4fffb3f4e",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T15:42:49.962818",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "15bd323b_test.xlsx",
+    "csv_filename": "15bd323b_test.csv",
+    "preview_filename": "15bd323b_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "483c887a-abb6-400e-ad21-a3b3a6ec546e",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T15:42:43.123698",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "c032d20c_test.xlsx",
+    "csv_filename": "c032d20c_test.csv",
+    "preview_filename": "c032d20c_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "d7d3bd55-ed1f-4b7f-8e00-1dc0d3126932",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T15:42:27.807586",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "a63043fd_test.xlsx",
+    "csv_filename": "a63043fd_test.csv",
+    "preview_filename": "a63043fd_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "56d325d2-aa17-422f-ad56-51fc985ebccd",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:25:12.683452",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "bb2488b3_test.xlsx",
+    "csv_filename": "bb2488b3_test.csv",
+    "preview_filename": "bb2488b3_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "101be65e-363a-4f7d-9522-922fa39f1cc6",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:24:55.151089",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "00cae56c_test.xlsx",
+    "csv_filename": "00cae56c_test.csv",
+    "preview_filename": "00cae56c_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "81af0768-e67e-4e44-8e6a-b2701ff1e2f6",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:22:09.664918",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "236296b5_test.xlsx",
+    "csv_filename": "236296b5_test.csv",
+    "preview_filename": "236296b5_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "4640b420-b8d0-4610-a4eb-990d11d388d9",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:21:57.954323",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "00e30aa6_test.xlsx",
+    "csv_filename": "00e30aa6_test.csv",
+    "preview_filename": "00e30aa6_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "ce604de9-b770-4314-9483-e51cfa6eda0b",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:05:58.336081",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "ea89b1e7_test.xlsx",
+    "csv_filename": "ea89b1e7_test.csv",
+    "preview_filename": "ea89b1e7_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "ca724d58-e26a-44e9-9241-367d375913bd",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:05:45.336261",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "afb9f625_test.xlsx",
+    "csv_filename": "afb9f625_test.csv",
+    "preview_filename": "afb9f625_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "cf31bac1-2b34-43ce-b1cf-977f9398b00d",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:05:37.912408",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "c48eaded_test.xlsx",
+    "csv_filename": "c48eaded_test.csv",
+    "preview_filename": "c48eaded_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "9cbde394-aed0-477e-8635-379b874a1100",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:05:30.076577",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "eff28dfb_test.xlsx",
+    "csv_filename": "eff28dfb_test.csv",
+    "preview_filename": "eff28dfb_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "00a52182-2ad9-4d81-a3f2-5e09fd5cbdb9",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-07T13:05:22.781401",
+    "row_count": 1,
+    "col_count": 2,
+    "avg_confidence": 0.77,
+    "excel_filename": "5ee89e10_test.xlsx",
+    "csv_filename": "5ee89e10_test.csv",
+    "preview_filename": "5ee89e10_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Umis no",
+          "confidence": 0.83,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            0,
+            94,
+            59
+          ]
+        }
+      ],
+      [
+        {
+          "text": "",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            76,
+            41,
+            20,
+            22
+          ]
+        },
+        {
+          "text": "Jent Name",
+          "confidence": 0.71,
+          "is_low_confidence": false,
+          "bbox": [
+            120,
+            42,
+            170,
+            21
+          ]
+        }
+      ]
+    ]
+  }
+]

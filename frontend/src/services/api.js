@@ -1,0 +1,76 @@
+import axios from 'axios';
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
+
+const apiClient = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Accept': 'application/json'
+  }
+});
+
+export const convertFileApi = async (file, preprocessOpts = {}, onUploadProgress) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('grayscale', preprocessOpts.grayscale ?? true);
+  formData.append('deskew', preprocessOpts.deskew ?? true);
+  formData.append('contrast', preprocessOpts.contrast ?? true);
+  formData.append('denoise', preprocessOpts.denoise ?? true);
+  formData.append('threshold_mode', preprocessOpts.threshold_mode || 'adaptive');
+  formData.append('engine', preprocessOpts.engine || 'easyocr');
+
+  const response = await apiClient.post('/convert', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+    onUploadProgress
+  });
+  return response.data;
+};
+
+export const exportTableApi = async (tableData, filename, id) => {
+  const response = await apiClient.post('/export', {
+    table_data: tableData,
+    filename,
+    id
+  });
+  return response.data;
+};
+
+export const mergeTablesApi = async (items, mode = 'sheets') => {
+  const response = await apiClient.post('/merge', {
+    items,
+    mode
+  });
+  return response.data;
+};
+
+export const fetchHistoryApi = async (searchQuery = '', fileType = '', dateFilter = '') => {
+  const params = {};
+  if (searchQuery) params.q = searchQuery;
+  if (fileType) params.type = fileType;
+  if (dateFilter) params.date = dateFilter;
+
+  const response = await apiClient.get('/history', { params });
+  return response.data;
+};
+
+export const deleteHistoryItemApi = async (entryId) => {
+  const response = await apiClient.delete(`/history/${entryId}`);
+  return response.data;
+};
+
+export const clearHistoryApi = async () => {
+  const response = await apiClient.delete('/history');
+  return response.data;
+};
+
+export const getDownloadUrl = (filename) => {
+  if (!filename) return '#';
+  if (filename.startsWith('http')) return filename;
+  return `${API_BASE_URL}/download/${filename}`;
+};
+
+export const getPreviewUrl = (filename) => {
+  if (!filename) return '#';
+  if (filename.startsWith('http')) return filename;
+  return `${API_BASE_URL}/preview/${filename}`;
+};

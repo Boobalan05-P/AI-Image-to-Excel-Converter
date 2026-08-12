@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Node / React
+node_modules/
+dist/
+.vite/
+
+# Uploads & Outputs
+uploads/*
+!uploads/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Environment variables
+.env
+.env.local
+
+# IDEs & System
+.DS_Store
+.vscode/
+.idea/
+# Logs
+*.log
+
+# PowerShell cache
+Microsoft/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
+dist/
+
+# Uploads & outputs
+uploads/*
+!uploads/.gitkeep
+outputs/*
