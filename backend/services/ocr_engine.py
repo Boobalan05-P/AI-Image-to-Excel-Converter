@@ -134,45 +134,49 @@ def split_compound_cell(cell: dict) -> list[dict]:
 
 
 def ocr_grid_in_single_pass(image: np.ndarray, grid_rows: list) -> tuple[list, list] | None:
-    """Run EasyOCR once and place each recognized box in its containing cell."""
+    """Recognize all known table cells in one EasyOCR batch."""
     reader = get_easyocr_reader()
     if reader is None:
         return None
 
     try:
-        results = reader.readtext(image)
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) if image.ndim == 3 else image
+        cells = [box for row_boxes in grid_rows for box in row_boxes]
+        horizontal_list = []
+        for x, y, w, h in cells:
+            inset = min(3, max(1, min(w, h) // 5))
+            horizontal_list.append([x + inset, x + w - inset, y + inset, y + h - inset])
+        results = reader.recognize(
+            gray_image,
+            horizontal_list=horizontal_list,
+            free_list=[],
+            decoder="greedy",
+            batch_size=min(32, len(horizontal_list)),
+            workers=0,
+        )
     except Exception as exc:
-        logger.warning("Full-grid EasyOCR failed: %s", exc)
+        logger.warning("Batched grid EasyOCR failed: %s", exc)
         return None
 
     table_data = []
     cell_confidences = []
+    result_index = 0
     for row_boxes in grid_rows:
-        row_data = [
-            {"text": "", "confidence": 1.0, "is_low_confidence": False, "bbox": [x, y, w, h]}
-            for x, y, w, h in row_boxes
-        ]
+        row_data = []
+        for x, y, w, h in row_boxes:
+            _, text, confidence = results[result_index]
+            result_index += 1
+            cleaned_text = auto_correct_cell_value(text)
+            rounded_confidence = round(float(confidence), 2)
+            row_data.append({
+                "text": cleaned_text,
+                "confidence": rounded_confidence,
+                "is_low_confidence": rounded_confidence < 0.5 and cleaned_text != "",
+                "bbox": [x, y, w, h],
+            })
+            if cleaned_text:
+                cell_confidences.append(float(confidence))
         table_data.append(row_data)
-
-    for bbox, text, confidence in results:
-        center_x = sum(point[0] for point in bbox) / len(bbox)
-        center_y = sum(point[1] for point in bbox) / len(bbox)
-        cleaned_text = auto_correct_cell_value(text)
-        if not cleaned_text:
-            continue
-
-        for row_index, row_boxes in enumerate(grid_rows):
-            for column_index, (x, y, w, h) in enumerate(row_boxes):
-                if x <= center_x <= x + w and y <= center_y <= y + h:
-                    cell = table_data[row_index][column_index]
-                    cell["text"] = " ".join(part for part in [cell["text"], cleaned_text] if part)
-                    cell["confidence"] = min(cell["confidence"], round(float(confidence), 2))
-                    cell["is_low_confidence"] = cell["confidence"] < 0.5
-                    cell_confidences.append(float(confidence))
-                    break
-            else:
-                continue
-            break
 
     return table_data, cell_confidences
 
