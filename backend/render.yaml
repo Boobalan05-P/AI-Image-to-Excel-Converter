@@ -15,3 +15,5 @@ services:
         value: "*"
       - key: DEFAULT_OCR_ENGINE
         value: easyocr
+      - key: WARM_OCR_ON_STARTUP
+        value: "true"

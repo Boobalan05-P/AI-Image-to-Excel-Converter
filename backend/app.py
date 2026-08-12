@@ -17,7 +17,7 @@ from config import (
 )
 from services.image_processor import preprocess_image
 from services.table_detector import detect_table_grid
-from services.ocr_engine import process_table_ocr
+from services.ocr_engine import get_easyocr_reader, process_table_ocr
 from services.pdf_processor import convert_pdf_to_images
 from services.excel_exporter import convert_matrix_to_dataframe, generate_styled_excel, generate_csv, merge_tables_to_excel
 from services.history_service import (
@@ -69,6 +69,13 @@ app.json_encoder = NpEncoder
 app.config['MAX_CONTENT_LENGTH'] = MAX_CONTENT_LENGTH
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
+
+# On Render, loading EasyOCR's neural-network weights inside the first upload
+# request can consume the entire Gunicorn request timeout. Render preloads the
+# app process, so initialize the reader during service startup instead.
+if os.environ.get("WARM_OCR_ON_STARTUP", "true").lower() == "true" and DEFAULT_OCR_ENGINE == "easyocr":
+    logger.info("Warming EasyOCR model during application startup.")
+    get_easyocr_reader()
 
 # Enable CORS for frontend integration
 CORS(app, resources={r"/api/*": {"origins": CORS_ORIGINS}})
