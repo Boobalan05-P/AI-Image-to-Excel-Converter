@@ -93,7 +93,12 @@ export default function App() {
 
     } catch (error) {
       console.error('File conversion error:', error);
-      const errMsg = error.response?.data?.error || 'Failed to process file. Please try again.';
+      const errMsg = error.response?.data?.error
+        || (error.code === 'ECONNABORTED'
+          ? 'The OCR request timed out. Please try again with a smaller file.'
+          : error.message === 'Network Error'
+            ? 'Could not reach the conversion service. It may be starting up; wait a minute and try again.'
+            : 'Failed to process file. Please try again.');
       showToast(errMsg, 'error');
     } finally {
       setIsProcessing(false);

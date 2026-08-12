@@ -5,7 +5,9 @@ services:
     region: oregon
     plan: free
     buildCommand: "pip install -r backend/requirements.txt"
-    startCommand: "gunicorn --directory backend app:app"
+    # EasyOCR can take longer than Gunicorn's 30-second default on Render's
+    # free CPU instances, especially immediately after a service cold start.
+    startCommand: "gunicorn --directory backend --workers 1 --threads 1 --timeout 180 --graceful-timeout 30 app:app"
     envVars:
       - key: PORT
         value: 10000
