@@ -1,5 +1,250 @@
 [
   {
+    "id": "e8759390-186d-4440-aeee-6bd68b691ad6",
+    "filename": "test_table.png",
+    "file_type": "PNG",
+    "file_size": 15995,
+    "upload_date": "2026-08-13T11:38:37.348832",
+    "row_count": 5,
+    "col_count": 4,
+    "avg_confidence": 0.21,
+    "excel_filename": "62647d60_test_table.xlsx",
+    "csv_filename": "62647d60_test_table.csv",
+    "preview_filename": "62647d60_test_table.png",
+    "table_data": [
+      [
+        {
+          "text": "~Ric1",
+          "confidence": 0.17,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            0,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~Ric2",
+          "confidence": 0.13,
+          "is_low_confidence": true,
+          "bbox": [
+            150,
+            0,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~Ric3",
+          "confidence": 0.19,
+          "is_low_confidence": true,
+          "bbox": [
+            300,
+            0,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~Ric4",
+          "confidence": 0.16,
+          "is_low_confidence": true,
+          "bbox": [
+            450,
+            0,
+            150,
+            80
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~R2c1",
+          "confidence": 0.18,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            80,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~R2c2",
+          "confidence": 0.29,
+          "is_low_confidence": true,
+          "bbox": [
+            150,
+            80,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "Rzc3",
+          "confidence": 0.55,
+          "is_low_confidence": false,
+          "bbox": [
+            300,
+            80,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~R2c4",
+          "confidence": 0.3,
+          "is_low_confidence": true,
+          "bbox": [
+            450,
+            80,
+            150,
+            80
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~R3C1",
+          "confidence": 0.13,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            160,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~R3C2",
+          "confidence": 0.35,
+          "is_low_confidence": true,
+          "bbox": [
+            150,
+            160,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~R3C3",
+          "confidence": 0.1,
+          "is_low_confidence": true,
+          "bbox": [
+            300,
+            160,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~RsC4",
+          "confidence": 0.14,
+          "is_low_confidence": true,
+          "bbox": [
+            450,
+            160,
+            150,
+            80
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~R4C1",
+          "confidence": 0.09,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            240,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~R4C2",
+          "confidence": 0.15,
+          "is_low_confidence": true,
+          "bbox": [
+            150,
+            240,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~R4C3",
+          "confidence": 0.18,
+          "is_low_confidence": true,
+          "bbox": [
+            300,
+            240,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~R4C4",
+          "confidence": 0.17,
+          "is_low_confidence": true,
+          "bbox": [
+            450,
+            240,
+            150,
+            80
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~Rsc1",
+          "confidence": 0.23,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            320,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~RsC2",
+          "confidence": 0.2,
+          "is_low_confidence": true,
+          "bbox": [
+            150,
+            320,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~Rsc3",
+          "confidence": 0.35,
+          "is_low_confidence": true,
+          "bbox": [
+            300,
+            320,
+            150,
+            80
+          ]
+        },
+        {
+          "text": "~Rsc4",
+          "confidence": 0.18,
+          "is_low_confidence": true,
+          "bbox": [
+            450,
+            320,
+            150,
+            80
+          ]
+        }
+      ]
+    ]
+  },
+  {
     "id": "5fd18b8e-c980-415c-bcbd-17092f937a7c",
     "filename": "00cae56c_test.jpeg",
     "file_type": "JPEG",
