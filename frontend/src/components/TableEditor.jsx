@@ -22,7 +22,9 @@ export default function TableEditor({ resultData, onShowToast }) {
     }
   }, [resultData]);
 
-  if (!resultData || matrix.length === 0) return null;
+  if (!resultData) return null;
+
+  const noTableDetected = matrix.length === 0;
 
   const handleCellChange = (rIdx, cIdx, val) => {
     setMatrix((prev) => {
@@ -107,6 +109,38 @@ export default function TableEditor({ resultData, onShowToast }) {
 
   return (
     <div className="w-full max-w-6xl mx-auto space-y-6 animate-fade-in">
+      {noTableDetected && (
+        <div className="bg-yellow-50 dark:bg-amber-950/30 rounded-2xl p-6 border border-amber-200 dark:border-amber-800 shadow-sm">
+          <div className="flex items-start justify-between">
+            <div>
+              <h3 className="text-sm font-bold text-amber-800 dark:text-amber-200">No table detected</h3>
+              <p className="text-xs text-amber-700 dark:text-amber-300 mt-1">The conversion completed but no table grid was detected in the image. You can still download the generated files below.</p>
+            </div>
+            <div className="flex items-center space-x-2">
+              {currentExcelUrl && (
+                <a
+                  href={getDownloadUrl(currentExcelUrl)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold"
+                >
+                  Download Excel (.xlsx)
+                </a>
+              )}
+              {currentCsvUrl && (
+                <a
+                  href={getDownloadUrl(currentCsvUrl)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-900 text-white text-xs font-semibold"
+                >
+                  Download CSV
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
       
       {/* Header Info & Actions */}
       <div className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
