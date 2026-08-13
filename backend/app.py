@@ -71,11 +71,26 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER
 
 # On Render, loading EasyOCR's neural-network weights inside the first upload
-# request can consume the entire Gunicorn request timeout. Render preloads the
-# app process, so initialize the reader during service startup instead.
+# request can consume the entire Gunicorn request timeout. We still want to
+# warm the model for faster first requests, but doing the work synchronously
+# can block process startup and trigger platform timeouts. Start warming in a
+# background thread so the Flask app becomes responsive immediately.
 if os.environ.get("WARM_OCR_ON_STARTUP", "true").lower() == "true" and DEFAULT_OCR_ENGINE == "easyocr":
-    logger.info("Warming EasyOCR model during application startup.")
-    get_easyocr_reader()
+    logger.info("Scheduling EasyOCR model warm-up in background thread.")
+    try:
+        import threading
+        def _warm_reader():
+            try:
+                logger.info("Background: Initializing EasyOCR Reader...")
+                get_easyocr_reader()
+                logger.info("Background: EasyOCR warm-up complete.")
+            except Exception:
+                logger.exception("Background: EasyOCR warm-up failed")
+
+        t = threading.Thread(target=_warm_reader, daemon=True)
+        t.start()
+    except Exception:
+        logger.exception("Failed to start background thread for EasyOCR warm-up")
 
 # Enable CORS for frontend integration
 CORS(app, resources={r"/api/*": {"origins": CORS_ORIGINS}})
