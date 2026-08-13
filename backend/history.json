@@ -1,5 +1,665 @@
 [
   {
+    "id": "54cf79e3-ac30-4d77-82b7-d0e372ab7f05",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-13T11:49:40.741676",
+    "row_count": 9,
+    "col_count": 3,
+    "avg_confidence": 0.67,
+    "excel_filename": "519e057b_test.xlsx",
+    "csv_filename": "519e057b_test.csv",
+    "preview_filename": "519e057b_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Uniz [",
+          "confidence": 0.07,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            0,
+            94,
+            60
+          ]
+        },
+        {
+          "text": "Student Mans [",
+          "confidence": 0.02,
+          "is_low_confidence": true,
+          "bbox": [
+            94,
+            0,
+            194,
+            60
+          ]
+        },
+        {
+          "text": "Gendi",
+          "confidence": 0.11,
+          "is_low_confidence": true,
+          "bbox": [
+            288,
+            0,
+            52,
+            60
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994351920",
+          "confidence": 0.41,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            60,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "AAKASH",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            60,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            60,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994500173",
+          "confidence": 0.33,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            80,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "DHIVYESH R",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            80,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.77,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            80,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994562587",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            100,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "PREM MENAN",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            100,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.74,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            100,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994557687",
+          "confidence": 0.44,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            120,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "SUBITH VENU G",
+          "confidence": 0.99,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            120,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.79,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            120,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9000274954",
+          "confidence": 0.59,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            140,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ABRISH SANJAI",
+          "confidence": 0.98,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            140,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.6,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            140,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9002075494",
+          "confidence": 0.55,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            160,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "KABILESH B",
+          "confidence": 0.92,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            160,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.77,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            160,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9002058719",
+          "confidence": 0.58,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            180,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "BARANITHARAN A",
+          "confidence": 0.98,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            180,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.74,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            180,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9002390553",
+          "confidence": 0.58,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            200,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ANANTHA KUMAR",
+          "confidence": 0.86,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            200,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.81,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            200,
+            52,
+            20
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "id": "b9a78f16-34f2-4895-812f-c6bad8cb8056",
+    "filename": "test.jpeg",
+    "file_type": "JPEG",
+    "file_size": 17570,
+    "upload_date": "2026-08-13T11:43:45.128141",
+    "row_count": 9,
+    "col_count": 3,
+    "avg_confidence": 0.67,
+    "excel_filename": "80f24ad1_test.xlsx",
+    "csv_filename": "80f24ad1_test.csv",
+    "preview_filename": "80f24ad1_test.jpeg",
+    "table_data": [
+      [
+        {
+          "text": "Uniz [",
+          "confidence": 0.07,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            0,
+            94,
+            60
+          ]
+        },
+        {
+          "text": "Student Mans [",
+          "confidence": 0.02,
+          "is_low_confidence": true,
+          "bbox": [
+            94,
+            0,
+            194,
+            60
+          ]
+        },
+        {
+          "text": "Gendi",
+          "confidence": 0.11,
+          "is_low_confidence": true,
+          "bbox": [
+            288,
+            0,
+            52,
+            60
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994351920",
+          "confidence": 0.41,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            60,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "AAKASH",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            60,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            60,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994500173",
+          "confidence": 0.33,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            80,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "DHIVYESH R",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            80,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.77,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            80,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994562587",
+          "confidence": 0.47,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            100,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "PREM MENAN",
+          "confidence": 1.0,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            100,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.74,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            100,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9994557687",
+          "confidence": 0.44,
+          "is_low_confidence": true,
+          "bbox": [
+            0,
+            120,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "SUBITH VENU G",
+          "confidence": 0.99,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            120,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.79,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            120,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9000274954",
+          "confidence": 0.59,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            140,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ABRISH SANJAI",
+          "confidence": 0.98,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            140,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.6,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            140,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9002075494",
+          "confidence": 0.55,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            160,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "KABILESH B",
+          "confidence": 0.92,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            160,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.77,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            160,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9002058719",
+          "confidence": 0.58,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            180,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "BARANITHARAN A",
+          "confidence": 0.98,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            180,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.74,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            180,
+            52,
+            20
+          ]
+        }
+      ],
+      [
+        {
+          "text": "~9002390553",
+          "confidence": 0.58,
+          "is_low_confidence": false,
+          "bbox": [
+            0,
+            200,
+            94,
+            20
+          ]
+        },
+        {
+          "text": "ANANTHA KUMAR",
+          "confidence": 0.86,
+          "is_low_confidence": false,
+          "bbox": [
+            94,
+            200,
+            194,
+            20
+          ]
+        },
+        {
+          "text": "Male",
+          "confidence": 0.81,
+          "is_low_confidence": false,
+          "bbox": [
+            288,
+            200,
+            52,
+            20
+          ]
+        }
+      ]
+    ]
+  },
+  {
     "id": "e8759390-186d-4440-aeee-6bd68b691ad6",
     "filename": "test_table.png",
     "file_type": "PNG",

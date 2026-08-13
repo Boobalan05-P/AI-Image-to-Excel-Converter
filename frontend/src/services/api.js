@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://ai-image-to-excel-converter.onrender.com/api';
+// If `VITE_API_BASE_URL` is not provided at build time, default to the
+// same origin the frontend is served from so deployments don't need an
+// environment-specific URL hardcoded. This allows the frontend to work
+// with Render preview URLs like `https://...-1.onrender.com` automatically.
+const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL || (typeof window !== 'undefined' ? `${window.location.origin}/api` : '');
 const API_BASE_URL = configuredBaseUrl.replace(/\/$/, '').endsWith('/api')
   ? configuredBaseUrl.replace(/\/$/, '')
   : `${configuredBaseUrl.replace(/\/$/, '')}/api`;
