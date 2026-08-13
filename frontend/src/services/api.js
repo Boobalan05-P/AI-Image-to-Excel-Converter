@@ -17,6 +17,8 @@ const apiClient = axios.create({
     'Accept': 'application/json'
   }
 });
+// Allow longer uploads (large files) and be explicit about CORS failures timing
+apiClient.defaults.timeout = 120000; // 2 minutes
 
 export const convertFileApi = async (file, preprocessOpts = {}, onUploadProgress) => {
   const formData = new FormData();
@@ -28,11 +30,28 @@ export const convertFileApi = async (file, preprocessOpts = {}, onUploadProgress
   formData.append('threshold_mode', preprocessOpts.threshold_mode || 'adaptive');
   formData.append('engine', preprocessOpts.engine || 'easyocr');
 
-  const response = await apiClient.post('/convert', formData, {
-    headers: { 'Content-Type': 'multipart/form-data' },
-    onUploadProgress
-  });
-  return response.data;
+  try {
+    const response = await apiClient.post('/convert', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      onUploadProgress
+    });
+    return response.data;
+  } catch (err) {
+    // If the primary backend host is unreachable (network error/CORS),
+    // attempt a same-origin fallback before surfacing the error to the UI.
+    console.warn('convertFileApi: primary API request failed, attempting same-origin fallback', err);
+    try {
+      const fallbackResponse = await axios.post('/api/convert', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' },
+        onUploadProgress,
+        timeout: 120000
+      });
+      return fallbackResponse.data;
+    } catch (fallbackErr) {
+      console.error('convertFileApi: same-origin fallback also failed', fallbackErr);
+      throw err; // re-throw original error for existing error handling
+    }
+  }
 };
 
 export const exportTableApi = async (tableData, filename, id) => {
