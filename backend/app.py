@@ -93,7 +93,36 @@ if os.environ.get("WARM_OCR_ON_STARTUP", "true").lower() == "true" and DEFAULT_O
         logger.exception("Failed to start background thread for EasyOCR warm-up")
 
 # Enable CORS for frontend integration
+from flask import make_response
+
+# Enable CORS for frontend integration (primary). Keep explicit after_request
+# handler to ensure preflight responses always include the required headers
 CORS(app, resources={r"/api/*": {"origins": CORS_ORIGINS}})
+logger.info(f"CORS origins configured: {CORS_ORIGINS}")
+
+
+@app.after_request
+def add_cors_headers(response):
+    # Always add permissive CORS headers for API routes so browser preflight
+    # responses include Access-Control-Allow-Origin. This mirrors the value
+    # from configuration but falls back to '*' to avoid silent failures.
+    try:
+        origin = request.headers.get('Origin')
+        allowed = CORS_ORIGINS or '*'
+        # If wildcard configured, allow all origins
+        if allowed == '*':
+            response.headers['Access-Control-Allow-Origin'] = '*'
+        else:
+            # If origin is present and allowed, echo it back
+            if origin and (origin == allowed or origin in str(allowed)):
+                response.headers['Access-Control-Allow-Origin'] = origin
+        response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+        response.headers['Access-Control-Allow-Methods'] = 'GET,POST,PUT,DELETE,OPTIONS'
+        response.headers['Access-Control-Expose-Headers'] = 'Content-Disposition'
+        response.headers['Access-Control-Allow-Credentials'] = 'false'
+    except Exception:
+        logger.exception('Failed to add CORS headers to response')
+    return response
 
 def is_allowed_file(filename: str) -> bool:
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
