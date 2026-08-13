@@ -245,14 +245,16 @@ def convert_file():
         # can contain NumPy scalar types. Flask's JSON provider cannot encode
         # those types directly, which previously caused a successful conversion
         # to end as a 500 response before the UI could receive its Excel URL.
+        # Use absolute URLs so clients can reliably open download/preview links
+        base = request.url_root.rstrip('/')
         response_payload = clean_data({
             "message": "File processed successfully",
             "entry": history_entry,
             "sharpness": sharpness_info,
             "table_data": all_extracted_tables,
-            "excel_url": f"/api/download/{excel_filename}",
-            "csv_url": f"/api/download/{csv_filename}",
-            "preview_url": f"/api/preview/{saved_filename}"
+            "excel_url": f"{base}/api/download/{excel_filename}",
+            "csv_url": f"{base}/api/download/{csv_filename}",
+            "preview_url": f"{base}/api/preview/{saved_filename}"
         })
         return jsonify(response_payload), 200
 
@@ -286,10 +288,11 @@ def export_custom_table():
     generate_styled_excel(df, excel_path, include_header=False)
     generate_csv(df, csv_path, include_header=False)
 
+    base = request.url_root.rstrip('/')
     return jsonify({
         "message": "Export created successfully",
-        "excel_url": f"/api/download/{excel_filename}",
-        "csv_url": f"/api/download/{csv_filename}"
+        "excel_url": f"{base}/api/download/{excel_filename}",
+        "csv_url": f"{base}/api/download/{csv_filename}"
     }), 200
 
 @app.route('/api/merge', methods=['POST'])
@@ -308,9 +311,10 @@ def merge_files():
 
     try:
         merge_tables_to_excel(items, output_path, mode=mode)
+        base = request.url_root.rstrip('/')
         return jsonify({
             "message": "Workbook merged successfully",
-            "excel_url": f"/api/download/{output_filename}"
+            "excel_url": f"{base}/api/download/{output_filename}"
         }), 200
     except Exception as e:
         logger.error(f"Merge error: {str(e)}")
