@@ -4,10 +4,12 @@ import axios from 'axios';
 // same origin the frontend is served from so deployments don't need an
 // environment-specific URL hardcoded. This allows the frontend to work
 // with Render preview URLs like `https://...-1.onrender.com` automatically.
-const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL || (typeof window !== 'undefined' ? `${window.location.origin}/api` : '');
-const API_BASE_URL = configuredBaseUrl.replace(/\/$/, '').endsWith('/api')
-  ? configuredBaseUrl.replace(/\/$/, '')
-  : `${configuredBaseUrl.replace(/\/$/, '')}/api`;
+const BACKEND_URL = 'https://ai-image-to-excel-converter-backend.onrender.com'; 
+
+const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL || BACKEND_URL;
+
+const rawUrl = configuredBaseUrl.replace(/\/$/, '');
+const API_BASE_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl}/api`;
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
