@@ -82,6 +82,7 @@ export default function App() {
       );
 
       setUploadProgress(100);
+      console.debug('Conversion response:', data);
       setResultData(data);
       showToast('Table successfully extracted and converted to Excel!', 'success');
       loadHistory(); // Refresh history counter

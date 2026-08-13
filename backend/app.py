@@ -314,11 +314,19 @@ def clear_history():
 @app.route('/api/download/<filename>', methods=['GET'])
 def download_file(filename):
     """Serves downloadable output Excel / CSV files."""
+    file_path = os.path.join(app.config['OUTPUT_FOLDER'], filename)
+    if not os.path.exists(file_path):
+        logger.error(f"Requested download file not found: {file_path}")
+        return jsonify({"error": "Requested file not found"}), 404
     return send_from_directory(app.config['OUTPUT_FOLDER'], filename, as_attachment=True)
 
 @app.route('/api/preview/<filename>', methods=['GET'])
 def preview_file(filename):
     """Serves uploaded preview images."""
+    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    if not os.path.exists(file_path):
+        logger.error(f"Requested preview file not found: {file_path}")
+        return jsonify({"error": "Requested preview file not found"}), 404
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == '__main__':
